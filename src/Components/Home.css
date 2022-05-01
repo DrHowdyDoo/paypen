@@ -1,0 +1,15 @@
+.container{
+    display: flex;
+    height: 100vh;
+}
+
+.h-left{
+    flex: 1;
+}
+
+.h-right{
+    flex: 1;
+    background-color: #1f28eb;
+    text-align: center;
+    color: white;
+}
