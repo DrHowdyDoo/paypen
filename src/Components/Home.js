@@ -3,10 +3,9 @@ import logo from './Assests/logo.png';
 import quote from './Assests/ic_quote.svg';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button'
-import LoginIcon from '@mui/icons-material/Login';
-import { Checkbox, Typography } from '@mui/material';
+import { Checkbox } from '@mui/material';
 import FormControlLabel from '@mui/material/FormControlLabel';
-import { borderRadius, fontSize, fontWeight } from '@mui/system';
+
 
 const Home = () => {
 
@@ -31,13 +30,18 @@ const Home = () => {
                             type="password"
                         />
                         <div className="form-control">
-                            <FormControlLabel control={<Checkbox defaultChecked style={{ color: "#1f28eb" }} />} label={<span style={{ fontWeight: "600", fontSize: "15px" }}>Remember me</span>} />
+                            <FormControlLabel control={<Checkbox defaultChecked style={{ color: "#1f28eb" }} />} label={<span style={{ fontWeight: "600", fontSize: "15px" , marginRight: "62px"}}>Remember me</span>} />
                             <span>
-                                <Button variant="text" style={{ textTransform: 'none', fontWeight: "600", color: "#1f28eb", marginLeft: "62px", borderRadius: 50 }}>Forgot Password?</Button>
+                                <Button variant="text" style={{ textTransform: 'none', fontWeight: "600", color: "#1f28eb", borderRadius: 50 }}>Forgot Password?</Button>
                             </span>
                         </div>
 
                         <Button className="btn-login" size="large" variant="contained" style={{ borderRadius: 50, marginTop: 24, backgroundColor: "#1f28eb", textTransform: 'none', fontWeight: "600" }}>Login</Button>
+
+                        <div className="form-footer">
+                            <span style={{fontWeight : "500", fontSize: "14px"}}>Don't have an account?</span>
+                            <Button variant="text" style={{textTransform : 'none', fontWeight : "600", color: "#1f28eb", borderRadius: 50}}>Create an Account</Button>
+                        </div>
                     </form>
 
                 </div>
