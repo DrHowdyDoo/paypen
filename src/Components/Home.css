@@ -1,6 +1,6 @@
 .container {
     display: flex;
-    height: 100vh;
+    height: 100%;
 }
 
 .h-left {
@@ -12,7 +12,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-left: 32px;
     margin-top: 32px;
 }
 
@@ -52,10 +51,11 @@
 .quote {
     font-weight: 600;
     font-size: 60px;
+    font-size: 3.125vmax;
     margin: 0px;
 }
 
-.title-wrapper {
+.q-wrapper {
     text-align: start;
     margin-left: 64px;
 }
@@ -78,14 +78,15 @@
 .welcome-msg {
     font-weight: 600;
     font-size: 46px;
+    font-size: 2.3vw;
     margin: 0px;
 }
 
-.p{
+.p {
     color: #1f28eb;
 }
 
-.sub-quote{
+.sub-quote {
     color: rgba(255, 255, 255, 0.774);
 }
 
@@ -93,33 +94,59 @@
     color: rgb(0, 0, 0);
     font-weight: 500;
     font-size: large;
+    font-size: 1.1vw;
     margin: 0px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.inputRounded .MuiOutlinedInput-root  {
+.inputRounded .MuiOutlinedInput-root {
     border-radius: 50px;
 }
 
-.inputRounded .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline{
+.inputRounded .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
     border-color: #1f28eb;
 }
 
-.form{
+.form {
     width: 40%;
     margin-top: 64px;
+    margin-top: 5.8vmin;
 }
 
-.btn-login .MuiButton-root{
+.btn-login .MuiButton-root {
     border-radius: 50%;
 }
 
-.form-control{
+.form-control {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
     margin-left: 10px;
     margin-top: 10px;
 }
 
-.form-footer{
+.form-footer {
     margin-top: 30px;
-    margin-left: 10px;
+    text-align: center;
+}
+
+@media (max-width: 1200px) {
+    .container {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    .form {
+        width: 80%;
+    }
+
+    .welcome-msg {
+        font-size: 5vw;
+    }
+
+    .sub-msg {
+        font-size: 2.6vw;
+    }
 }

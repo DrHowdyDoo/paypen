@@ -30,7 +30,7 @@ const Home = () => {
                             type="password"
                         />
                         <div className="form-control">
-                            <FormControlLabel control={<Checkbox defaultChecked style={{ color: "#1f28eb" }} />} label={<span style={{ fontWeight: "600", fontSize: "15px" , marginRight: "62px"}}>Remember me</span>} />
+                            <FormControlLabel control={<Checkbox defaultChecked style={{ color: "#1f28eb" }} />} label={<span style={{ fontWeight: "600", fontSize: "14px" }}>Remember me</span>} />
                             <span>
                                 <Button variant="text" style={{ textTransform: 'none', fontWeight: "600", color: "#1f28eb", borderRadius: 50 }}>Forgot Password?</Button>
                             </span>
@@ -38,11 +38,12 @@ const Home = () => {
 
                         <Button className="btn-login" size="large" variant="contained" style={{ borderRadius: 50, marginTop: 24, backgroundColor: "#1f28eb", textTransform: 'none', fontWeight: "600" }}>Login</Button>
 
-                        <div className="form-footer">
-                            <span style={{fontWeight : "500", fontSize: "14px"}}>Don't have an account?</span>
-                            <Button variant="text" style={{textTransform : 'none', fontWeight : "600", color: "#1f28eb", borderRadius: 50}}>Create an Account</Button>
-                        </div>
                     </form>
+
+                    <div className="form-footer">
+                        <span style={{ fontWeight: "500", fontSize: "14px" }}>Don't have an account?</span>
+                        <Button variant="text" style={{ textTransform: 'none', fontWeight: "600", color: "#1f28eb", borderRadius: 50 }}>Create an Account</Button>
+                    </div>
 
                 </div>
 
@@ -50,7 +51,7 @@ const Home = () => {
 
             <div className="h-right">
                 <div className="bg-cover"></div>
-                <div className="title-wrapper">
+                <div className="q-wrapper">
                     <img src={quote} alt="quote_icon" />
                     <div className="l-top"></div>
                     <h1 className="quote">
