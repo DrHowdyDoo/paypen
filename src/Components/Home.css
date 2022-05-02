@@ -97,8 +97,12 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.inputRounded .MuiOutlinedInput-root {
+.inputRounded .MuiOutlinedInput-root  {
     border-radius: 50px;
+}
+
+.inputRounded .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline{
+    border-color: #1f28eb;
 }
 
 .form{
