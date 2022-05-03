@@ -1,7 +1,20 @@
 
+.ellipse-tr{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30%;
+    height: auto;
+}
+
 .logo-wrapper{
     display: flex;
     align-items: center;
+}
+.home-body{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .home-container{
@@ -10,12 +23,14 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    padding: 2vw;
+    padding-left: 2vw;
 }
 
 .video-wrapper{
-    border-radius: 150px;
+    border-radius: 20% 0 0 20%;
     overflow: hidden;
+    width: 50%;
+    height: 100%;
 }
 
 .p {
@@ -25,4 +40,28 @@
 .h-title{
     font-size: 4vw;
     margin: 0px;
+}
+
+.h-subtitle{
+    margin: 0;
+    padding-left: 10px;
+    font-size: 1vw;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.title-wrapper{
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   justify-content: center;
+   align-items: flex-start;
+}
+
+.footer{
+    width: 14%;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
