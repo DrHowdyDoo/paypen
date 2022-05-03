@@ -1,0 +1,150 @@
+.container {
+    display: flex;
+    height: 100%;
+}
+
+.h-left {
+    flex: 1;
+}
+
+.left-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 32px;
+}
+
+.h-right {
+    flex: 1;
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: #1f28eb;
+    text-align: center;
+    color: white;
+}
+
+.bg-cover {
+    background-image: url('Assests/spiral_vector.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0.08;
+}
+
+.header {
+    margin-top: 16px;
+    margin-left: 32px;
+    text-align: start;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.quote {
+    font-weight: 600;
+    font-size: 60px;
+    font-size: 3.125vmax;
+    margin: 0px;
+}
+
+.q-wrapper {
+    text-align: start;
+    margin-left: 64px;
+}
+
+.l-top {
+    border-left: 2px solid rgba(255, 255, 255, 0.342);
+    border-radius: 1px;
+    margin-left: 32px;
+    margin-top: 8px;
+    height: 40px;
+}
+
+.l-bottom {
+    border-left: 2px solid rgba(255, 255, 255, 0.342);
+    border-radius: 1px;
+    margin-left: 96px;
+    height: 140px;
+}
+
+.login-title {
+    font-weight: 600;
+    font-size: 46px;
+    font-size: 2.3vw;
+    margin: 0px;
+}
+
+
+.sub-quote {
+    color: rgba(255, 255, 255, 0.774);
+}
+
+
+.inputRounded .MuiOutlinedInput-root {
+    border-radius: 50px;
+}
+
+.inputRounded .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+    border-color: #1f28eb;
+}
+
+.form {
+    width: 40%;
+    margin-top: 64px;
+    margin-top: 5.8vmin;
+}
+
+.btn-login .MuiButton-root {
+    border-radius: 50%;
+}
+
+.form-control {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.form-footer {
+    margin-top: 30px;
+    text-align: center;
+}
+
+@media (max-width: 800px) {
+    .container {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 1280px) {
+    .form {
+        width: 60%;
+    }
+}
+
+@media (max-width: 1580px) {
+    .form {
+        width: 50%;
+    }
+}
+
+@media (max-width: 768px) {
+    .form {
+        width: 80%;
+    }
+
+    .login-title {
+        font-size: 5vw;
+    }
+}
