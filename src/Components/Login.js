@@ -5,6 +5,7 @@ import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button'
 import { Checkbox } from '@mui/material';
 import FormControlLabel from '@mui/material/FormControlLabel';
+import { Link } from 'react-router-dom';
 
 
 const Login = () => {
@@ -16,7 +17,9 @@ const Login = () => {
 
                 <div className="header">
                     <img src={logo} alt="logo" width="32px" height="32px" />
-                    <h3>PayPen</h3>
+                    <Link to="/" style={{ textDecoration: 'none', color: "black" }}>
+                        <h3>PayPen</h3>
+                    </Link>
                 </div>
 
                 <div className="left-block">

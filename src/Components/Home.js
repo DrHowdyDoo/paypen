@@ -5,9 +5,13 @@ import Button from '@mui/material/Button';
 import { Container, Navbar, NavbarBrand } from 'react-bootstrap';
 import video from './Assests/3d-illustration.mp4';
 import ellipse from './Assests/ellipse.svg';
+import { useNavigate } from 'react-router-dom';
 
 
 const Home = () => {
+
+    const navigate = useNavigate();
+
     return (
         <div className='home-body'>
             <div className="header">
@@ -29,14 +33,14 @@ const Home = () => {
                         Welcome to <span className="p">Pay</span>Pen
                     </h1>
                     <h4 className='h-subtitle'>Pension Management System</h4>
-                    
-                    <Button size="large" variant="contained" style={{ borderRadius: 50, backgroundColor: "#1f28eb", textTransform: 'none', fontWeight: "600" }}>Get Started</Button>
+
+                    <Button onClick={() => { navigate("/login") }} size="large" variant="contained" style={{ borderRadius: 50, backgroundColor: "#1f28eb", textTransform: 'none', fontWeight: "600" }}>Get Started</Button>
 
                 </div>
                 <div className="video-wrapper">
-                    <video src={video} autoPlay="true" muted loop width="100%" height="auto"/>
+                    <video src={video} autoPlay="true" muted loop width="100%" height="auto" />
                 </div>
-                
+
             </div>
 
 
