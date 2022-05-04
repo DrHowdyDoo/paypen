@@ -15,29 +15,6 @@
     margin-top: 32px;
 }
 
-.h-right {
-    flex: 1;
-    display: flex;
-    position: relative;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    background-color: #1f28eb;
-    text-align: center;
-    color: white;
-}
-
-.bg-cover {
-    background-image: url('Assests/spiral_vector.svg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    left: 0;
-    top: 0;
-    opacity: 0.08;
-}
 
 .header {
     margin-top: 16px;
@@ -48,17 +25,6 @@
     align-items: center;
 }
 
-.quote {
-    font-weight: 600;
-    font-size: 60px;
-    font-size: 3.125vmax;
-    margin: 0px;
-}
-
-.q-wrapper {
-    text-align: start;
-    margin-left: 64px;
-}
 
 .l-top {
     border-left: 2px solid rgba(255, 255, 255, 0.342);
@@ -75,16 +41,11 @@
     height: 140px;
 }
 
-.login-title {
+.title {
     font-weight: 600;
     font-size: 46px;
     font-size: 2.3vw;
     margin: 0px;
-}
-
-
-.sub-quote {
-    color: rgba(255, 255, 255, 0.774);
 }
 
 
@@ -144,7 +105,7 @@
         width: 80%;
     }
 
-    .login-title {
+    .title {
         font-size: 5vw;
     }
 }

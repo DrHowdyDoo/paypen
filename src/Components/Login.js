@@ -1,14 +1,17 @@
 import './Login.css';
 import logo from './Assests/logo.png';
-import quote from './Assests/ic_quote.svg';
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button'
 import { Checkbox } from '@mui/material';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import { Link } from 'react-router-dom';
+import Quote from './Quote';
+import { useNavigate } from 'react-router-dom';
 
 
 const Login = () => {
+
+    const navigate = useNavigate();
 
     return (
         <div className="container">
@@ -23,7 +26,7 @@ const Login = () => {
                 </div>
 
                 <div className="left-block">
-                    <h1 className="login-title">Login</h1>
+                    <h1 className="title">Login</h1>
 
                     <form action="" className='form'>
                         <TextField fullWidth className='inputRounded' id="username" label="Username" variant="outlined" margin="normal"
@@ -44,27 +47,14 @@ const Login = () => {
 
                     <div className="form-footer">
                         <span style={{ fontWeight: "500", fontSize: "14px" }}>Don't have an account?</span>
-                        <Button variant="text" style={{ textTransform: 'none', fontWeight: "600", color: "#1f28eb", borderRadius: 50 }}>Create an Account</Button>
+                        <Button onClick={() => { navigate("/register") }} variant="text" style={{ textTransform: 'none', fontWeight: "600", color: "#1f28eb", borderRadius: 50 }}>Create an Account</Button>
                     </div>
 
                 </div>
 
             </div>
 
-            <div className="h-right">
-                <div className="bg-cover"></div>
-                <div className="q-wrapper">
-                    <img src={quote} alt="quote_icon" />
-                    <div className="l-top"></div>
-                    <h1 className="quote">
-                        Don't let <span className="sub-quote">retirement</span> <br />
-                        put <span className="sub-quote">an end</span> <br />
-                        to <span className="sub-quote">your</span> <br />
-                        <span className="sub-quote">finances.</span>
-                    </h1>
-                </div>
-                <div className="l-bottom"></div>
-            </div>
+            <Quote />
 
         </div>
     );
